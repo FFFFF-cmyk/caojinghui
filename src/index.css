@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #101210;
+    --bg-secondary: #1B211B;
+    --color-olive: #66765D;
+    --color-sage: #A5B49A;
+    --color-ivory: #F0EEE8;
+    --color-blue: #91A9B6;
+    --color-muted: #A8ABA4;
+  }
+
+  body {
+    background-color: #101210;
+    color: #F0EEE8;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar matching dark archival aesthetic */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #101210;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #252e25;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #66765D;
+  }
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Subtle archival texture grid overlay */
+.bg-archive-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(165, 180, 154, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(165, 180, 154, 0.03) 1px, transparent 1px);
+}

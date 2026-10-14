@@ -1,0 +1,6 @@
+{
+  "name": "CAO JIN HUI — Digital Craft Knowledge Archive",
+  "description": "Preserving the embodied knowledge of traditional Chinese lime and straw plastering through digital motion recording, interactive visualisations, and skill comparison.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
